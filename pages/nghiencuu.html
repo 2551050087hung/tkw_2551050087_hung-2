@@ -3,131 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thành Tựu Nghiên Cứu & Khai Phá Khoa Học | Đại Học Bách Khoa</title>
-  <meta name="description" content="Oxford Nhà Bè University - Kiến tạo tri thức và cơ hội phát triển.">
-  <link rel="stylesheet" href="output.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-    </style>
+
+    <title>Nghiên cứu & Công bố | Oxford Nhà Bè University</title>
+    <meta name="description" content="Oxford Nhà Bè University - Nghiên cứu khoa học, thành tựu và chuyển giao công nghệ.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../input.css">
 </head>
+
 <body>
 
-    <!-- Header Navigation -->
+    <!-- HEADER -->
     <header>
-        <div class="logo">ĐẠI HỌC BÁCH KHOA</div>
-        <nav>
-            <a href="#tong-quan">Tổng Quan</a>
-            <a href="#nghien-cuu">Dự Án Tiêu Biểu</a>
-            <a href="#giai-thuong">Giải Thưởng</a>
-            <a href="#lienh-he">Liên Hệ Hợp Tác</a>
+        <a class="logo" href="../index.html">OXFORD NHÀ BÈ</a>
+
+        <button type="button" class="hb-toggle hb-toggle--light" aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="hb-menu" id="mainNav">
+            <a href="../index.html">Trang chủ</a>
+            <a href="#tong-quan">Tổng quan</a>
+            <a href="#nghien-cuu">Dự án</a>
+            <a href="#giai-thuong">Giải thưởng</a>
+            <a href="../pages/lienhe.html">Liên hệ</a>
         </nav>
+        <div class="hb-overlay"></div>
     </header>
 
-    <!-- Hero Banner -->
+    <!-- HERO -->
     <section class="hero">
-        <h1>TIÊN PHONG TRONG NGHIÊN CỨU & CHUYỂN GIAO CÔNG NGHỆ</h1>
-        <p>Kiến tạo tương lai thông qua những phát minh khoa học đỉnh cao mang tầm quốc tế và ứng dụng thực tiễn cho cộng đồng.</p>
+        <div class="hero-content">
+            <h1>TIÊN PHONG TRONG NGHIÊN CỨU & CHUYỂN GIAO CÔNG NGHỆ</h1>
+        </div>
     </section>
 
-    <div class="container">
+    <main class="container">
 
-        <!-- Key Statistics Section -->
+        <!-- THỐNG KÊ -->
         <section id="tong-quan">
             <h2 class="section-title">Thành Tựu Bằng Những Con Số</h2>
+
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-number">1,200+</div>
                     <div class="stat-label">Bài báo xuất bản trên ISI/Scopus</div>
                 </div>
+
                 <div class="stat-card">
                     <div class="stat-number">85</div>
                     <div class="stat-label">Bằng sáng chế đã được cấp</div>
                 </div>
+
                 <div class="stat-card">
                     <div class="stat-number">45+</div>
                     <div class="stat-label">Dự án chuyển giao công nghệ</div>
                 </div>
+
                 <div class="stat-card">
                     <div class="stat-number">$12M</div>
-                    <div class="stat-label">Quỹ tài trợ nghiên cứu năm nay</div>
+                    <div class="stat-label">Quỹ tài trợ nghiên cứu</div>
                 </div>
             </div>
         </section>
 
-        <!-- Outstanding Research Projects Section -->
+        <!-- DỰ ÁN NGHIÊN CỨU -->
         <section id="nghien-cuu">
             <h2 class="section-title">Công Trình Nghiên Cứu Tiêu Biểu</h2>
+
             <div class="projects-grid">
 
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Trí tuệ nhân tạo" class="project-img">
-                    <div class="project-content">
-                        <span class="tag">Trí Tuệ Nhân Tạo</span>
-                        <h3 class="project-title">Hệ Thống AI Chẩn Đoán Bệnh Qua Hình Ảnh X-quang</h3>
-                        <p class="project-desc">Mô hình học sâu đạt độ chính xác 98.5% trong việc phát hiện sớm các tổn thương phổi, giúp hỗ trợ bác sĩ chẩn đoán nhanh gấp 5 lần.</p>
-                        <p class="lead-researcher">Trưởng nhóm: PGS. TS. Nguyễn Văn A (Viện CNTT)</p>
-                    </div>
-                </div>
+                <article class="project-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=85"
+                        alt="Nghiên cứu trí tuệ nhân tạo"
+                        class="project-img"
+                        loading="lazy"
+                    >
 
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=600&q=80" alt="Năng lượng tái tạo" class="project-img">
                     <div class="project-content">
-                        <span class="tag">Năng Lượng Mới</span>
-                        <h3 class="project-title">Pin Mặt Trời Perovskite Hiệu Suất Cao</h3>
-                        <p class="project-desc">Phát triển thành công vật liệu pin mặt trời thế hệ mới giúp giảm 40% chi phí sản xuất và nâng hiệu suất chuyển đổi năng lượng lên 26%.</p>
-                        <p class="lead-researcher">Trưởng nhóm: Giáo sư Trần Thị B (Khoa Khoa học Vật liệu)</p>
-                    </div>
-                </div>
+                        <span class="tag">TRÍ TUỆ NHÂN TẠO</span>
 
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80" alt="Công nghệ sinh học" class="project-img">
-                    <div class="project-content">
-                        <span class="tag">Công Nghệ Sinh Học</span>
-                        <h3 class="project-title">Vật Liệu Sinh Học Tự Phân Hủy Từ Rác Thải Nông Nghiệp</h3>
-                        <p class="project-desc">Giải pháp thay thế nhựa dùng một lần làm từ vỏ trấu và bã mía, phân hủy hoàn toàn trong tự nhiên chỉ sau 90 ngày.</p>
-                        <p class="lead-researcher">Trưởng nhóm: TS. Lê Hoàng C (Khoa Công nghệ Sinh học)</p>
+                        <h3 class="project-title">
+                            Hệ Thống AI Chẩn Đoán Bệnh Qua Hình Ảnh X-quang
+                        </h3>
+
+                        <p class="project-desc">
+                            Mô hình học sâu hỗ trợ phát hiện sớm các tổn thương phổi,
+                            góp phần rút ngắn thời gian phân tích hình ảnh y tế.
+                        </p>
+
+                        <p class="lead-researcher">
+                        </p>
                     </div>
-                </div>
+                </article>
+
+                <article class="project-card">
+                    <img
+                        src="https://freesolar.vn/wp-content/uploads/2021/05/pin-nang-luong-mat-troi-lam-tu-gi.jpg"
+                        alt="Nghiên cứu năng lượng mặt trời"
+                        class="project-img"
+                        loading="lazy"
+                    >
+
+                    <div class="project-content">
+                        <span class="tag">NĂNG LƯỢNG MỚI</span>
+
+                        <h3 class="project-title">
+                            Pin Mặt Trời Perovskite Hiệu Suất Cao
+                        </h3>
+
+                        <p class="project-desc">
+                            Phát triển vật liệu pin mặt trời thế hệ mới,
+                            hướng tới giảm chi phí sản xuất và nâng cao hiệu suất chuyển đổi năng lượng.
+                        </p>
+
+                        <p class="lead-researcher">
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=85"
+                        alt="Nghiên cứu công nghệ sinh học"
+                        class="project-img"
+                        loading="lazy"
+                    >
+
+                    <div class="project-content">
+                        <span class="tag">CÔNG NGHỆ SINH HỌC</span>
+
+                        <h3 class="project-title">
+                            Vật Liệu Sinh Học Tự Phân Hủy Từ Rác Thải Nông Nghiệp
+                        </h3>
+
+                        <p class="project-desc">
+                            Nghiên cứu vật liệu thay thế nhựa dùng một lần từ
+                            phụ phẩm nông nghiệp, hướng tới khả năng phân hủy tự nhiên.
+                        </p>
+
+                        <p class="lead-researcher">
+                        </p>
+                    </div>
+                </article>
 
             </div>
         </section>
 
-        <!-- Awards & Recognition Section -->
+        <!-- GIẢI THƯỞNG -->
         <section id="giai-thuong">
-            <h2 class="section-title">Giải Thưởng & Ghi Nhận Tầm Quốc Tế</h2>
+            <h2 class="section-title">Giải Thưởng & Ghi Nhận</h2>
+
             <div class="timeline">
+
                 <div class="timeline-item">
                     <div class="timeline-year">2026</div>
-                    <h4>Giải Thưởng Sáng Tạo Khoa Học Toàn Cầu (Global Innovation Award)</h4>
-                    <p>Được trao cho dự án lọc nước mặn thành nước ngọt chi phí thấp ứng dụng công nghệ màng lọc Graphene.</p>
+
+                    <h4>Giải Thưởng Sáng Tạo Khoa Học Toàn Cầu</h4>
+
+                    <p>
+                        Ghi nhận dự án nghiên cứu công nghệ lọc nước mặn thành nước ngọt
+                        với định hướng giảm chi phí và tăng khả năng ứng dụng thực tế.
+                    </p>
                 </div>
+
                 <div class="timeline-item">
                     <div class="timeline-year">2025</div>
-                    <h4>Top 100 Đại Học Có Tác Động Xuất Sắc Theo Xếp Hạng THE Impact</h4>
-                    <p>Ghi nhận những đóng góp vượt bậc cho các Mục tiêu Phát triển Bền vững (SDGs) của Liên Hợp Quốc.</p>
+
+                    <h4>Top 100 Đại Học Có Tác Động Xuất Sắc</h4>
+
+                    <p>
+                        Ghi nhận những đóng góp nổi bật của hoạt động nghiên cứu
+                        đối với các Mục tiêu Phát triển Bền vững.
+                    </p>
                 </div>
+
                 <div class="timeline-item">
                     <div class="timeline-year">2024</div>
-                    <h4>Huân Chương Sáng Tạo Công Nghệ Quốc Gia</h4>
-                    <p>Trao cho tập thể các nhà khoa học của trường nhờ thành tựu chuyển giao công nghệ tự động hóa cho các nhà máy sản xuất chip.</p>
+
+                    <h4>Giải Thưởng Đổi Mới Công Nghệ</h4>
+
+                    <p>
+                        Vinh danh các nhóm nghiên cứu có sản phẩm khoa học
+                        mang tính ứng dụng và khả năng chuyển giao cao.
+                    </p>
                 </div>
+
             </div>
         </section>
-
-    </div>
-
-    <!-- Footer -->
-    <footer id="lienh-he">
-        <p><strong>Ban Quản Lý Nghiên Cứu Khoa Học - Đại Học Bách Khoa</strong></p>
-        <p>Địa chỉ: Số 123 Đường Sáng Tạo, Quận Khoa Học, TP. Hồ Chí Minh</p>
-        <p>Email: research@university.edu.vn | Điện thoại: (028) 3868 0000</p>
-        <p style="margin-top: 20px; font-size: 0.8rem; color: #888;">&copy; 2026 Trang web demo thiết kế thành tựu nghiên cứu đại học.</p>
+    </main>
+    <footer>
+        <p>
+            <strong>Oxford Nhà Bè University - Trung tâm Nghiên cứu & Đổi mới</strong>
+        </p>
+        <p>
+            Địa chỉ: Số 123 Đường Sáng Tạo, TP. Hồ Chí Minh
+        </p>
+        <p>
+            Email: research@oxfordnhabe.edu.vn | Điện thoại: (028) 3868 0000
+        </p>
+        <p style="margin-top: 18px; font-size: 0.78rem;">
+            &copy; 2026 Oxford Nhà Bè University. All rights reserved.
+        </p>
     </footer>
 
+    <script src="../src/hamburger.js"></script>
 </body>
 </html>

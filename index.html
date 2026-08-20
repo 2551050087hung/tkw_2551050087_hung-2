@@ -11,20 +11,33 @@
   <title>Trang chủ | Oxford Nhà Bè University</title>
 </head>
 <body>
-  <div id="siteHeader"></div>
-  
-<main>
   <header class="sticky top-0 z-40 border-b border-line bg-surface/85 backdrop-blur">
     <nav class="mx-auto flex max-w-6xl items-center justify-end px-5 py-4" aria-label="Điều hướng chính">
-      <ul class="flex items-center gap-4 text- font-medium">
-        <li><a href="./index.html#thanh-tuu" class="link-nav">Thành tựu</a></li>
-        <li><a href="./index.html#nganh-hoc" class="link-nav">Ngành học</a></li>
-        <li><a href="./index.html#khau-hieu" class="link-nav">Khẩu hiệu</a></li>
-        <li><a href="./pages/nghiencuu.html" class="link-nav">Nghiên cứu</a></li>    
+      <button
+        type="button"
+        class="hb-toggle"
+        aria-controls="nav-mobile"
+        aria-expanded="false"
+        aria-label="Mở menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul id="nav-mobile" class="hb-menu flex items-center gap-4 font-medium text-brand-700">
+        <li><a href="./index.html#thanh-tuu" class="nav-link">Thành tựu</a></li>
+        <li><a href="./index.html#nganh-hoc" class="nav-link">Ngành học</a></li>
+        <li><a href="./index.html#khau-hieu" class="nav-link">Khẩu hiệu</a></li>
+        <li><a href="./pages/nghiencuu.html" class="nav-link">Nghiên cứu</a></li>
         <li><a href="./pages/lienhe.html" class="nav-link">Liên hệ</a></li>
       </ul>
     </nav>
+    <div class="hb-overlay"></div>
   </header>
+
+  <div id="nav-sentinel" aria-hidden="true" class="h-px w-full"></div>
+
+<main>
+
 
    <section id="thanh-tuu" class="border-y border-line bg-surface-alt" aria-labelledby="doitac-title">
             <div class="mx-auto max-w-6xl px-5 py-12">
@@ -42,8 +55,7 @@
       <h1 class="page-title">Học để <span class="text-brand-600">dẫn đầu</span>, nghiên cứu để tạo khác biệt.</h1>
       <p class="mt-6 max-w-2xl text-lg leading-8 text-muted">Môi trường đại học hiện đại, thực tiễn và cởi mở, nơi người học được kết nối với tri thức, doanh nghiệp và cộng đồng.</p>
       <div class="mt-8 flex flex-wrap gap-3">
-        <a href="majors.html" class="btn btn-primary">Khám phá ngành học →</a>
-        <a href="about.html" class="btn btn-secondary">Tìm hiểu về trường</a>
+        <a href="./pages/nganhhoc.html" class="btn btn-primary">Khám phá ngành học →</a>
       </div>
       <div class="mt-12 grid max-w-xl grid-cols-3 gap-4">
         <div><strong class="soo">25+</strong><span class="chunho">Năm phát triển</span></div>
@@ -55,7 +67,7 @@
       <span class="badge bg-white/10 text-white">Admissions 2026</span>
       <h2 class="mt-6 text-3xl font-extrabold">Sẵn sàng cho hành trình đại học của bạn?</h2>
       <p class="mt-4 leading-7 text-brand-100">Chọn ngành, khám phá chương trình và gửi biểu mẫu đăng ký trực tuyến trong vài phút.</p>
-      <a href="registration.html" class="btn btn-light mt-8">FORM REGISTRATION</a>
+      <a href="./pages/lienhe.html" class="btn btn-light mt-8">FORM REGISTRATION</a>
       <div class="mt-10 grid grid-cols-2 gap-4">
         <div class="rounded-2xl bg-white/10 p-5"><b class="text-2xl">36</b><p class="mt-1 text-sm text-brand-100">Chương trình đào tạo</p></div>
         <div class="rounded-2xl bg-white/10 p-5"><b class="text-2xl">120+</b><p class="mt-1 text-sm text-brand-100">Đối tác doanh nghiệp</p></div>
@@ -88,7 +100,7 @@
   </div>
 </section>
 </main>
-  <div id="siteFooter"></div>
-  <script src="assets/app.js" defer></script>
+  <script src="./src/hamburger.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>

@@ -20,7 +20,7 @@
     "url": "https://github.com/2551050087hung/tkw_2551050087_hung-2/issues"
   },
   "homepage": "https://github.com/2551050087hung/tkw_2551050087_hung-2#readme",
-  "dependencies": {
+  "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "tailwindcss": "^4.3.3"
   }

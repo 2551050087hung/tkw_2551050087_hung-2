@@ -4,281 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Liên hệ | Oxford Nhà Bè University</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../input.css">
 
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #222;
-      background: #f5f8f6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .header {
-      background: #fff;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    .nav {
-      max-width: 1200px;
-      margin: auto;
-      min-height: 72px;
-      padding: 0 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: 800;
-      color: #239ab9;
-      white-space: nowrap;
-    }
-
-    .menu {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      list-style: none;
-    }
-
-    .menu a {
-      padding: 9px 14px;
-      border: 1px solid transparent;
-      border-radius: 8px;
-      transition: .2s;
-    }
-
-    .menu a:hover,
-    .menu .active {
-      color: #239ab9;
-      border-color: #239ab9;
-      background: #eefafd;
-    }
-
-    .hero {
-      background: #6dc6dc;
-      padding: 70px 24px;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: clamp(32px, 5vw, 52px);
-      margin-bottom: 12px;
-    }
-
-    .hero p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 18px;
-    }
-
-    .container {
-      width: min(1150px, calc(100% - 48px));
-      margin: auto;
-    }
-
-    .contact-section {
-      padding: 65px 0;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .section-title h2 {
-      font-size: 32px;
-      margin-bottom: 8px;
-    }
-
-    .section-title p {
-      color: #666;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 30px;
-    }
-
-    .card {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 14px;
-      padding: 30px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, .05);
-    }
-
-    .card h3 {
-      font-size: 23px;
-      margin-bottom: 22px;
-    }
-
-    .info-item {
-      display: flex;
-      gap: 15px;
-      padding: 17px 0;
-      border-bottom: 1px solid #eee;
-    }
-
-    .info-item:last-child {
-      border-bottom: 0;
-    }
-
-    .icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 10px;
-      background: #e8f8fb;
-      color: #239ab9;
-      display: grid;
-      place-items: center;
-      font-size: 20px;
-      flex-shrink: 0;
-    }
-
-    .info-item strong {
-      display: block;
-      margin-bottom: 3px;
-    }
-
-    .info-item span {
-      color: #666;
-    }
-
-    form {
-      display: grid;
-      gap: 17px;
-    }
-
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 17px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 7px;
-      font-weight: 600;
-    }
-
-    input,
-    select,
-    textarea {
-      width: 100%;
-      padding: 13px 14px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font: inherit;
-      outline: none;
-      background: #fff;
-    }
-
-    input:focus,
-    select:focus,
-    textarea:focus {
-      border-color: #239ab9;
-      box-shadow: 0 0 0 3px rgba(35, 154, 185, .12);
-    }
-
-    textarea {
-      min-height: 140px;
-      resize: vertical;
-    }
-
-    .btn {
-      width: fit-content;
-      padding: 12px 24px;
-      border: 1px solid #239ab9;
-      border-radius: 8px;
-      background: #239ab9;
-      color: #fff;
-      font-weight: 700;
-      cursor: pointer;
-      transition: .2s;
-    }
-
-    .btn:hover {
-      background: #1b7f99;
-    }
-
-    .map {
-      margin-top: 30px;
-      min-height: 260px;
-      border: 1px solid #ddd;
-      border-radius: 14px;
-      background:
-        linear-gradient(rgba(109, 198, 220, .15), rgba(109, 198, 220, .15)),
-        repeating-linear-gradient(45deg, #fff, #fff 20px, #edf4f5 20px, #edf4f5 21px);
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 30px;
-    }
-
-    .map-content h3 {
-      margin-bottom: 8px;
-      font-size: 24px;
-    }
-
-    .footer {
-      background: #202a2d;
-      color: #fff;
-      padding: 35px 24px;
-      margin-top: 20px;
-    }
-
-    .footer-content {
-      width: min(1150px, 100%);
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      gap: 25px;
-      flex-wrap: wrap;
-    }
-
-    .footer p {
-      color: #cbd2d4;
-    }
-
-    @media (max-width: 800px) {
-      .nav {
-        flex-direction: column;
-        padding: 18px 20px;
-      }
-
-      .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
-      }
-
-      .contact-grid,
-      .form-row {
-        grid-template-columns: 1fr;
-      }
-
-      .container {
-        width: min(100% - 30px, 1150px);
-      }
-    }
   </style>
 </head>
 
@@ -287,24 +18,26 @@
   <!-- HEADER -->
   <header class="header">
     <nav class="nav">
-      <a href="./index.html" class="logo">OXFORD NHÀ BÈ</a>
+      <a href="../index.html" class="logo">OXFORD NHÀ BÈ</a>
 
-      <ul class="menu">
-        <li><a href="../index.html">Trang chủ</a></li>
-        <li><a href="../pages/nghiencuu.html">Nghiên cứu</a></li>
-        <li><a href="../pages/lienhe.html" class="active">Liên hệ</a></li>
+      <button type="button" class="hb-toggle" aria-controls="mainMenu" aria-expanded="false" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="menu hb-menu" id="mainMenu">
+        <li><a href="../index.html" class="nav-link">Trang chủ</a></li>
+        <li><a href="./nganhhoc.html" class="nav-link">Ngành học</a></li>
+        <li><a href="./nghiencuu.html" class="nav-link">Nghiên cứu</a></li>
+        <li><a href="./lienhe.html" class="nav-link">Liên hệ</a></li>
       </ul>
     </nav>
+    <div class="hb-overlay"></div>
   </header>
 
   <!-- HERO -->
   <section class="hero">
     <div class="container">
       <h1>Liên hệ với chúng tôi</h1>
-      <p>
-        Oxford Nhà Bè University luôn sẵn sàng hỗ trợ và giải đáp mọi thắc mắc
-        của sinh viên, phụ huynh và các đối tác.
-      </p>
     </div>
   </section>
 
@@ -462,6 +195,7 @@
     </div>
   </footer>
 
+  <script src="../src/hamburger.js"></script>
   <script>
     document.getElementById("contactForm").addEventListener("submit", function(event) {
       event.preventDefault();
